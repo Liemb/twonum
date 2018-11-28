@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="True/False"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="113dp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second number"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="First number"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/btn1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="small"
+           android:gravity="center"
+           tools:layout_editor_absoluteX="31dp"
+           tools:layout_editor_absoluteY="259dp"
+           android:onClick="small"/>
+
+       <Button
+           android:id="@+id/btn2"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="eq"
+           tools:layout_editor_absoluteX="148dp"
+           tools:layout_editor_absoluteY="259dp"
+           android:onClick="neq" />
+
+       <Button
+           android:id="@+id/btn3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="big"
+           tools:layout_editor_absoluteX="266dp"
+           tools:layout_editor_absoluteY="259dp"
+           android:onClick="big"/>
+   </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:onClick="create"
+            android:text="Click for numbers"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="370dp" />
+
+</LinearLayout>
